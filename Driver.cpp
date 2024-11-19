@@ -46,13 +46,5 @@ int main() {
     std::cout << "Running selection sort on 10,000 random numbers: " << std::endl;
     sorter.selection_Sort(randomNumbers);
     sorter.PrintLastRuntime();
-
-
-
-
-
-
-
-    
 }
 
