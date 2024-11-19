@@ -20,14 +20,12 @@ int main() {
     int n = 10000;
     int upperLimit = 729, lowerLimit = 0;
 
-    int numTrialsToRun = 100;
-
     std::vector<int> randomNumbers = generateRandomList(n, lowerLimit, upperLimit);
 
     Sorter sorter;
 
     //bubble sort:
-    std::cout << "Running bubble sort on 10,000 random numbers: " << std::endl;
+    std::cout << "Running bubble sort on " << n << " random numbers: " << std::endl;
     sorter.bubble_Sort(randomNumbers);
     sorter.PrintLastRuntime();
 
@@ -35,7 +33,7 @@ int main() {
     randomNumbers = generateRandomList(n, lowerLimit, upperLimit);
 
     //insertion sort:
-    std::cout << "Running insertion sort on 10,000 random numbers: " << std::endl;
+    std::cout << "Running insertion sort on " << n << " random numbers: " << std::endl;
     sorter.insertion_Sort(randomNumbers);
     sorter.PrintLastRuntime();
 
@@ -43,7 +41,7 @@ int main() {
     randomNumbers = generateRandomList(n, lowerLimit, upperLimit);
 
     //selection sort:
-    std::cout << "Running selection sort on 10,000 random numbers: " << std::endl;
+    std::cout << "Running selection sort on " << n << " random numbers: " << std::endl;
     sorter.selection_Sort(randomNumbers);
     sorter.PrintLastRuntime();
 }
